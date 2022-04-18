@@ -1,0 +1,66 @@
+/* social proof */
+
+.socialProof__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 0.5rem;
+}
+
+.social-proof__picture {
+    grid-column: 1 / 3;
+    grid-row: 1 / 5;
+
+    img {
+        border-radius: 2rem;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+}
+
+
+.social-proof__card {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+}
+
+.card {
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-left: 3px solid $primary;
+
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.2);
+    }
+    
+}
+
+
+.social-proof__stars {
+    width: 2rem;
+    margin: .5rem;
+}
+
+
+.social-proof__comment p {
+    font-size: 2em;
+    font-weight: 300;
+    text-align: left;
+    color: $secondary;
+    font-style: italic;
+}
+
+.social-proof__user p {
+    font-size: 2em;
+    font-weight: 500;
+    text-align: left;
+    color: $primary;
+    margin: 2rem 0;
+}
+
+.social-proof__logotipo {
+    width: 10rem;
+}

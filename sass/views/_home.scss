@@ -1,0 +1,130 @@
+/* qué aprenderas */
+
+.que-aprenderas {
+    justify-content: center;
+    align-items: center;
+}
+
+.que-aprenderas__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.que-aprenderas__cards--feature {
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+    padding: 4rem;
+    max-width: 50rem;
+    border-top: 3px solid $primary;
+
+    p {
+        font-size: 2em;
+        font-weight: 300;
+        text-align: left;
+        color: $secondary;
+    }
+    
+}
+
+.que-aprenderas__cards--img {
+    width: 3rem;
+    padding: 1rem 0;
+}
+
+/* ventajas */
+
+.grid-ventajas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "1 2 3"
+        "4 5 6";
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.ventajas__cards--feature {
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+    padding: 4rem;
+    max-width: 58rem;
+    border-top: 3px solid $primary;
+    transition: transform 1s ease-in;
+
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.2);
+    }
+    
+    p {
+        font-size: 2em;
+        font-weight: 300;
+        text-align: left;
+        color: $secondary;
+    }
+    
+    h3 {
+        font-size: 2em;
+        font-weight: 500;
+        text-align: left;
+        color: $primary;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .grid-ventajas {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "1"
+            "2"
+            "3"
+            "4"
+            "5"
+            "6";
+        row-gap: 1rem;
+    }
+
+    .ventajas__cards--feature {
+        border-radius: 1rem;
+        background-color: white;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        padding: 4rem;
+        max-width: 90vw;
+        border-top: 3px solid $primary;
+        transition: transform 1s ease-in;
+
+    }
+}
+
+/* products */
+
+.products {
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: $gray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "channelManager motordeReservas pms"
+        "paginaWeb crmHotelero pxsolAds";
+}

@@ -1,0 +1,43 @@
+nav {
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+    padding: 2rem 0;
+
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    .logo {
+        flex-basis: 10%;
+    }
+
+    .menu {
+        flex-basis: 30%;
+        justify-content: space-between;
+
+        .menu__item {
+            text-align: center;
+            color: $secondary;
+
+            &:hover {
+                color: $primary;
+                font-weight: 400;
+            }
+
+            .menu__link {
+                font-size: 1.5em;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+
+section {
+    padding: 5rem 0rem 5rem 0rem;
+}

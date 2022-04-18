@@ -1,0 +1,100 @@
+/* speakers */
+
+.speaker {
+    justify-content: center;
+    align-content: center;
+}
+
+.speaker__cards {
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 4rem;
+    min-width: 50rem;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.speaker__img {
+    justify-content: center;
+    align-content: center;
+}
+
+.speaker__cards--name {
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+    color: $secondary;
+
+}
+
+.speaker__cards--position {
+    font-size: 1.5em;
+    font-weight: 200;
+    text-align: center;
+    color: $primary;
+
+}
+
+.speaker__cards--business {
+    font-size: 1.5em;
+    font-weight: 200;
+    text-align: center;
+    color: $secondary;
+
+}
+
+@media (max-width: 576px) {
+    .speaker {
+        justify-content: center;
+        align-content: center;
+    }
+
+    .speaker__cards {
+        border-radius: 1rem;
+        background-color: white;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        margin: 1rem;
+        min-width: 93vw;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+
+}
+
+
+/* contact form */
+
+.title__contactForm {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 2em;
+    color: $primary;
+    text-align: center;
+}
+
+.card__contactForm {
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-top: 3px solid $primary;
+    padding: 3rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        font-size: 1.5em;
+        font-weight: 400;
+        text-align: left;
+        color: $secondary;
+    
+    }
+    
+}
+

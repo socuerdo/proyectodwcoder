@@ -1,0 +1,137 @@
+header {
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: $secondary;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    animation: effect_header 1 ease-in-out 5s;
+
+    .header__img {
+        max-width: 40vw;
+    }
+
+    @keyframes effect_header {
+        0% {
+            width: 40vw;
+        }
+
+        25% {
+            width: 80vw;
+        }
+
+        50% {
+            width: 70vw;
+        }
+
+        100% {
+            width: 40vw;
+        }
+    }
+
+    .subtitle {
+        color: $gray;
+        font-size: 2em;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .grid-header {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "sectionLeft-image sectionCenter-title sectionRight-contact";
+    }
+
+    .sectionLeft-image {
+        grid-area: sectionLeft-image;
+        gap: 1rem;
+        justify-items: center;
+        align-items: center;
+        padding: 2rem;
+
+    }
+
+    .sectionCenter-title {
+        grid-area: sectionCenter-title;
+        gap: 1rem;
+        justify-items: center;
+        align-items: center;
+        padding: 2rem;
+
+        h1 {
+            color: $primary;
+            font-size: 4em;
+            font-weight: 500;
+            text-align: left;
+            margin-bottom: 1em;
+        }
+
+        h3 {
+            color: $secondary;
+            font-size: 2em;
+            font-weight: 300;
+            text-align: left;
+            margin-bottom: 1em;
+        }
+
+    }
+
+    .sectionRight-contact {
+        grid-area: sectionRight-contact;
+        justify-items: center;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+    .grid-header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "sectionLeft-image"
+            "sectionCenter-title"
+            "sectionRight-contact";
+    }
+
+    .sectionLeft-image {
+        grid-area: sectionLeft-image;
+        gap: 1rem;
+        justify-items: center;
+        align-items: center;
+        padding: 2rem;
+        max-width: 50vw;
+
+    }
+
+    .sectionCenter-title {
+        grid-area: sectionCenter-title;
+        gap: 1rem;
+        justify-items: center;
+        align-items: center;
+        padding: 2rem;
+
+    }
+
+    .sectionRight-contact {
+        grid-area: sectionRight-contact;
+        justify-items: center;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 1rem;
+        max-width: 90vw;
+    }
+
+    .header__img picture img {
+        width: 10rem;
+    }
+
+}
