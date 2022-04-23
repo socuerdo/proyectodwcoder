@@ -59,13 +59,13 @@ footer {
         color: inherit;
         text-decoration: none;
         color: white;
-    
+
     }
-    
+
     ul a:hover {
         opacity: 1;
     }
-    
+
 
 }
 
@@ -108,7 +108,6 @@ footer {
 @media (max-width: 576px) {
     .gridFooter__menu {
         padding: 2rem 0;
-
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
@@ -124,7 +123,6 @@ footer {
 
     .gridFooter__pxsol {
         padding: 2rem 0;
-
         display: grid;
         grid-template-rows: repeat(3, 1fr);
         grid-area:
@@ -138,16 +136,24 @@ footer {
 
     .gridFooter__logotype {
         display: grid;
-        justify-content: left;
+        justify-content: center;
         align-content: center;
         row-gap: 2rem;
     }
 
     .gridFooter__socialMedia {
-        justify-content: left;
+        justify-content: center;
         align-content: center;
         row-gap: 2rem;
     }
 
-}
+    .footer__list--item {
+        text-align: center;
+        color: white;
+    }
 
+    h3 {
+        text-align: center;
+    }
+
+}

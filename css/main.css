@@ -2,6 +2,21 @@
 /* font */
 @import url("https://fonts.googleapis.com/css2? family= Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600; 1,700;1,800 & mostrar=cambiar");
 /* misc */
+.sp-xlarge {
+  padding: 5rem; }
+
+.sp-large {
+  padding: 3rem; }
+
+.sp-medium {
+  padding: 2rem; }
+
+.sp-small {
+  padding: 1.5rem; }
+
+.sp-xsmall {
+  padding: 1rem; }
+
 /* helpers */
 .flex-row {
   display: flex; }
@@ -95,6 +110,17 @@ button {
   height: 3rem;
   margin: 4px; }
 
+.button-terciary {
+  color: #cc0303;
+  font-family: "Open Sans";
+  font-size: 1.5em;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 4px;
+  font-weight: 600;
+  height: 3rem;
+  margin: 4px; }
+
 .button-outline {
   color: #cc0303;
   font-family: "Open Sans";
@@ -107,17 +133,6 @@ button {
   margin: 4px;
   width: 16rem;
   text-align: center; }
-
-.button-terciary {
-  color: #cc0303;
-  font-family: "Open Sans";
-  font-size: 1.5em;
-  border-radius: 0.5rem;
-  border: none;
-  padding: 4px;
-  font-weight: 600;
-  height: 3rem;
-  margin: 4px; }
 
 /* partials */
 /* footer */
@@ -217,13 +232,18 @@ footer {
     row-gap: 2rem; }
   .gridFooter__logotype {
     display: grid;
-    justify-content: left;
+    justify-content: center;
     align-content: center;
     row-gap: 2rem; }
   .gridFooter__socialMedia {
-    justify-content: left;
+    justify-content: center;
     align-content: center;
-    row-gap: 2rem; } }
+    row-gap: 2rem; }
+  .footer__list--item {
+    text-align: center;
+    color: white; }
+  h3 {
+    text-align: center; } }
 
 header {
   margin: 1rem;
@@ -233,20 +253,9 @@ header {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 3rem;
   justify-content: center;
-  align-items: center;
-  animation: effect_header 1 ease-in-out 5s; }
+  align-items: center; }
   header .header__img {
     max-width: 40vw; }
-
-@keyframes effect_header {
-  0% {
-    width: 40vw; }
-  25% {
-    width: 80vw; }
-  50% {
-    width: 70vw; }
-  100% {
-    width: 40vw; } }
   header .subtitle {
     color: #f4f4f4;
     font-size: 2em;
@@ -275,7 +284,7 @@ header {
       font-weight: 500;
       text-align: left;
       margin-bottom: 1em; }
-    header .sectionCenter-title h3 {
+    header .sectionCenter-title h2 {
       color: #222;
       font-size: 2em;
       font-weight: 300;
@@ -586,13 +595,13 @@ section {
   padding: 2rem;
   justify-content: space-around;
   align-items: center; }
-  .referrals h2 {
+  .referrals h3 {
     text-align: left;
     line-height: 120%;
     font-size: 2em;
     color: #f4f4f4;
     text-align: left; }
-  .referrals h2 span {
+  .referrals h3 span {
     text-align: left;
     line-height: 120%;
     font-size: 2em;

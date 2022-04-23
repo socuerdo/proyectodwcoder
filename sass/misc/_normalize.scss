@@ -1,3 +1,5 @@
+
+
 /* reset */
 
 *,
@@ -11,8 +13,11 @@
 
 /* globals */
 
+
+
 html {
     font-size: 62.5%;
+    
 }
 
 p {
@@ -95,6 +100,19 @@ button {
     margin: 4px;
 }
 
+.button-terciary {
+    color: $primary;
+    font-family: $font-primary;
+    font-size: 1.5em;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 4px;
+    font-weight: 600;
+    height: 3rem;
+    margin: 4px;
+}
+
+
 .button-outline {
     color: $primary;
     font-family: $font-primary;
@@ -110,14 +128,3 @@ button {
 }
 
 
-.button-terciary {
-    color: $primary;
-    font-family: $font-primary;
-    font-size: 1.5em;
-    border-radius: 0.5rem;
-    border: none;
-    padding: 4px;
-    font-weight: 600;
-    height: 3rem;
-    margin: 4px;
-}

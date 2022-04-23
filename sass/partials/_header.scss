@@ -7,28 +7,9 @@ header {
     padding: 3rem;
     justify-content: center;
     align-items: center;
-    animation: effect_header 1 ease-in-out 5s;
 
     .header__img {
         max-width: 40vw;
-    }
-
-    @keyframes effect_header {
-        0% {
-            width: 40vw;
-        }
-
-        25% {
-            width: 80vw;
-        }
-
-        50% {
-            width: 70vw;
-        }
-
-        100% {
-            width: 40vw;
-        }
     }
 
     .subtitle {
@@ -70,7 +51,7 @@ header {
             margin-bottom: 1em;
         }
 
-        h3 {
+        h2 {
             color: $secondary;
             font-size: 2em;
             font-weight: 300;
