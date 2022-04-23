@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
-        integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +26,7 @@
     <!-- navbar -->
 
     <nav>
-        <div class="navbar flex-row container">
+        <div class="navbar container">
             <picture class="logo">
                 <a href="./index.html"> <img src="./assets/img/logotipo-pxsol.png" alt="logotipo pxsol">
                 </a>
@@ -49,12 +48,29 @@
         </div>
     </nav>
 
-    
+    <!-- sidenav -->
+    <div id="mySidenav" class="sidenav">
+        <ul>
+         <li><picture class="logo">
+            <a href="./index.html"> <img src="https://www.pxsol.com/hs-fs/hubfs/logofooter.png?width=150&name=logofooter.png" alt="logotipo pxsol">
+            </a>
+        </picture></li>
+        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <li><a href="#">Referidos</a></li>
+        <li><a href="#">Templates</a></li>
+        <li><a href="#">Webinars</a></li>
+        <li><button class="button-primary">
+            <a href="./assets/view/signup.html" target="_blank" rel="probar pxsol gratis">Probar Pxsol Gratis</a>
+        </button></li>
+    </ul>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <!-- sidenav end -->
 
-    <!-- fin navbar -->
+    <!-- navbar end -->
 
     <!-- header -->
-    <header class="header flex-column">
+    <header class="header">
         <h1>Más y mejores reservas</h1>
         <h2 class="subtitle">Software hotelero para aumentar tus reservas directas, disminuir el pago de
             comisiones y mejorar la gestión
@@ -64,7 +80,7 @@
                 <a href="./assets/view/signup.html" target="_blank" rel="probar pxsol gratis">Probar Pxsol Gratis</a>
             </button>
         </div>
-        <picture class="header__picture flex-column">
+        <picture class="header__picture">
             <img class="header__img" src="./assets/img/header-home-laptop-estatico.png" alt="imagen header home">
         </picture>
     </header>
@@ -256,7 +272,7 @@
     <!-- referrals -->
 
     <section class="referrals flex-row">
-        <h3 class="title"> <span>Gana USD 120 refiriendo a un colega</span> <br> y regálale más días de prueba gratuita
+        <h3 class="title"> <span>Gana USD 120 refiriendo a un colega</span>y regálale más días de prueba gratuita
         </h3>
         <button class="button-primary">
             <a href="http://" target="_blank" rel="probar pxsol gratis">Quiero Referir</a>
@@ -351,6 +367,15 @@
     <!-- javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
     </script>
     <!-- fin javascript -->
 </body>

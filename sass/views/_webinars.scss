@@ -1,3 +1,37 @@
+/* header webinars */
+.grid-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "sectionLeft-image sectionCenter-title sectionRight-contact";
+
+    .sectionLeft-image {
+        grid-area: sectionLeft-image;
+        gap: 1rem;
+        justify-items: center;
+        align-items: center;
+        padding: 2rem;
+
+    }
+
+    .sectionCenter-title {
+        grid-area: sectionCenter-title;
+        gap: 1rem;
+        justify-items: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .sectionRight-contact {
+        grid-area: sectionRight-contact;
+        justify-items: center;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+}
+
 /* speakers */
 
 .speaker {
@@ -93,8 +127,7 @@
         font-weight: 400;
         text-align: left;
         color: $secondary;
-    
-    }
-    
-}
 
+    }
+
+}
