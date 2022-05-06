@@ -1,43 +1,6 @@
-/* qué aprenderas */
-
-.que-aprenderas {
-    justify-content: center;
-    align-items: center;
-}
-
-.que-aprenderas__cards {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.que-aprenderas__cards--feature {
-    margin: 1rem;
-    border-radius: 1rem;
-    background-color: white;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    flex-wrap: wrap;
-    padding: 4rem;
-    max-width: 50rem;
-    border-top: 3px solid $primary;
-
-    p {
-        font-size: 2em;
-        font-weight: 300;
-        text-align: left;
-        color: $secondary;
-    }
-    
-}
-
-.que-aprenderas__cards--img {
-    width: 3rem;
-    padding: 1rem 0;
-}
-
 /* ventajas */
-
 .grid-ventajas {
+    margin: 1.5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -57,26 +20,32 @@
     max-width: 58rem;
     border-top: 3px solid $primary;
     transition: transform 1s ease-in;
+    margin: 1rem;
 
     &:hover {
         transform: scale(1.02);
         box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.2);
     }
-    
+
     p {
         font-size: 2em;
         font-weight: 300;
         text-align: left;
         color: $secondary;
     }
-    
+
     h3 {
         font-size: 2em;
         font-weight: 500;
         text-align: left;
         color: $primary;
     }
-    
+
+    .beneficios__item--picture {
+        width: 3rem;
+        margin: 2rem 0;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -91,18 +60,15 @@
             "4"
             "5"
             "6";
-        row-gap: 1rem;
     }
 
     .ventajas__cards--feature {
         border-radius: 1rem;
         background-color: white;
         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-        padding: 4rem;
-        max-width: 90vw;
+        padding: 2rem;
         border-top: 3px solid $primary;
         transition: transform 1s ease-in;
-
     }
 }
 
@@ -111,13 +77,41 @@
 .products {
     margin: 1rem;
     border-radius: 1rem;
-    background-color: $gray;
+    background-color: $primary;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    padding: 5rem;
+    background-image: linear-gradient(to right, #f02222, #fe6b6b);
+    padding: 2rem;
     justify-content: center;
     align-items: center;
+
+    .product__picture {
+        height: 10rem;
+    }
+
+    .title {
+        color: white;
+        font-size: 3em;
+        font-weight: 600;
+        text-align: center;
+        margin: 1em;
+    }
+    
+    .subtitle {
+        color: white;
+        font-size: 2em;
+        font-weight: 400;
+        text-align: center;
+        margin: 1em;
+    }
+
+    li {
+        font-size: 2em;
+        font-weight: 300;
+        text-align: left;
+        color: white;
+    }
+    
 }
 
 .grid-products {
@@ -128,3 +122,5 @@
         "channelManager motordeReservas pms"
         "paginaWeb crmHotelero pxsolAds";
 }
+
+@media (max-width: 576px) {}

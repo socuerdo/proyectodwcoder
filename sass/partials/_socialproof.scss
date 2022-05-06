@@ -1,6 +1,7 @@
 /* social proof */
 
 .socialProof__grid {
+    margin: 1.5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -67,7 +68,7 @@
 @media (max-width: 576px) {
     .socialProof__grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(3, 1fr);
         column-gap: 1rem;
         margin: 1rem;
@@ -86,8 +87,8 @@
     }
 
     .social-proof__card {
-        grid-column: 2 / 4;
-        grid-row: 2 / 4;
+        grid-column: 2 / 6;
+        grid-row: 2 / 4s;
     }
 
     .card {

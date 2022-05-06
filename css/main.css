@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* font */
-@import url("https://fonts.googleapis.com/css2? family= Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600; 1,700;1,800 & mostrar=cambiar");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* misc */
 .sp-xlarge {
   padding: 5rem; }
@@ -60,7 +60,7 @@ span {
   margin: 0; }
 
 section {
-  padding: 5rem 0rem 5rem 0rem; }
+  padding: 1rem 0rem 1rem 0rem; }
 
 .title {
   color: #cc0303;
@@ -84,12 +84,12 @@ button {
 
 .button-primary {
   color: white;
-  font-family: "Open Sans";
+  font-family: "Work Sans";
   font-size: 1.5em;
   border-radius: 0.5rem;
   background-color: #cc0303;
   border: none;
-  padding: 4px;
+  padding: px;
   font-weight: 400;
   width: fit-content;
   height: 4rem;
@@ -100,7 +100,7 @@ button {
 
 .button-secondary {
   color: white;
-  font-family: "Open Sans";
+  font-family: "Work Sans";
   font-size: 0.7em;
   border-radius: 0.5rem;
   background-color: #cc0303;
@@ -112,7 +112,7 @@ button {
 
 .button-terciary {
   color: #cc0303;
-  font-family: "Open Sans";
+  font-family: "Work Sans";
   font-size: 1.5em;
   border-radius: 0.5rem;
   border: none;
@@ -123,7 +123,7 @@ button {
 
 .button-outline {
   color: #cc0303;
-  font-family: "Open Sans";
+  font-family: "Work Sans";
   font-size: 1em;
   border-radius: 0.5rem;
   border: 1px solid #cc0303;
@@ -259,23 +259,23 @@ header {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 3rem; }
   header h1 {
-    color: #cc0303;
+    color: #f4f4f4;
     font-size: 4em;
     font-weight: 500;
-    text-align: left;
-    margin-bottom: 1em; }
-  header h2 {
-    color: #222;
-    font-size: 3em;
-    font-weight: 300;
-    text-align: left;
-    margin-bottom: 1em; }
+    text-align: center; }
   header .subtitle {
     color: #f4f4f4;
     font-size: 2em;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 1em; }
+    width: 60vw; }
+  header .header__img {
+    width: 60vw;
+    margin: 2rem 0; }
+
+@media (max-width: 576px) {
+  header .header__img {
+    width: 80vw; } }
 
 nav {
   margin: 1rem;
@@ -311,57 +311,9 @@ nav {
         font-size: 1.5em;
         padding: 1rem; }
 
-.sidenav {
-  height: 100%;
-  /* 100% Full-height */
-  width: 0;
-  /* 0 width - change this with JavaScript */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Stay on top */
-  top: 0;
-  /* Stay at the top */
-  left: 0;
-  background-color: #111;
-  /* Black*/
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
-  padding-top: 15px;
-  /* Place content 60px from the top */
-  transition: 0.5s;
-  /* 0.5 second transition effect to slide in the sidenav */ }
-
-/* The navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 18px;
-  color: white;
-  display: block;
-  transition: 0.3s; }
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f4f4f4; }
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px; }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px; }
-  .sidenav a {
-    font-size: 18px; } }
-
 /* partners */
 .grid-partner {
+  margin: 1.5rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -384,8 +336,20 @@ nav {
 .partner__cards--logotipo {
   width: 15rem; }
 
+@media (max-width: 576px) {
+  .grid-partner {
+    margin: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "1 2" "3 4" "5 6" "7 8" "9";
+    justify-items: stretch;
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem; } }
+
 /* resources */
 .grid-resources {
+  margin: 1.5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -447,6 +411,7 @@ nav {
 
 /* social proof */
 .socialProof__grid {
+  margin: 1.5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -497,7 +462,7 @@ nav {
 @media (max-width: 576px) {
   .socialProof__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
     column-gap: 1rem;
     margin: 1rem; }
@@ -509,8 +474,8 @@ nav {
       box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
       width: 94vw; }
   .social-proof__card {
-    grid-column: 2 / 4;
-    grid-row: 2 / 4; }
+    grid-column: 2 / 6;
+    grid-row: 2 / 4s; }
   .card {
     border-radius: 1rem;
     background-color: white;
@@ -539,37 +504,9 @@ nav {
     width: 12em; } }
 
 /* views */
-/* qué aprenderas */
-.que-aprenderas {
-  justify-content: center;
-  align-items: center; }
-
-.que-aprenderas__cards {
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
-
-.que-aprenderas__cards--feature {
-  margin: 1rem;
-  border-radius: 1rem;
-  background-color: white;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  flex-wrap: wrap;
-  padding: 4rem;
-  max-width: 50rem;
-  border-top: 3px solid #cc0303; }
-  .que-aprenderas__cards--feature p {
-    font-size: 2em;
-    font-weight: 300;
-    text-align: left;
-    color: #222; }
-
-.que-aprenderas__cards--img {
-  width: 3rem;
-  padding: 1rem 0; }
-
 /* ventajas */
 .grid-ventajas {
+  margin: 1.5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -585,7 +522,8 @@ nav {
   padding: 4rem;
   max-width: 58rem;
   border-top: 3px solid #cc0303;
-  transition: transform 1s ease-in; }
+  transition: transform 1s ease-in;
+  margin: 1rem; }
   .ventajas__cards--feature:hover {
     transform: scale(1.02);
     box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.2); }
@@ -599,20 +537,21 @@ nav {
     font-weight: 500;
     text-align: left;
     color: #cc0303; }
+  .ventajas__cards--feature .beneficios__item--picture {
+    width: 3rem;
+    margin: 2rem 0; }
 
 @media (max-width: 576px) {
   .grid-ventajas {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "1" "2" "3" "4" "5" "6";
-    row-gap: 1rem; }
+    grid-template-areas: "1" "2" "3" "4" "5" "6"; }
   .ventajas__cards--feature {
     border-radius: 1rem;
     background-color: white;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    padding: 4rem;
-    max-width: 90vw;
+    padding: 2rem;
     border-top: 3px solid #cc0303;
     transition: transform 1s ease-in; } }
 
@@ -620,13 +559,32 @@ nav {
 .products {
   margin: 1rem;
   border-radius: 1rem;
-  background-color: #f4f4f4;
+  background-color: #cc0303;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  padding: 5rem;
+  background-image: linear-gradient(to right, #f02222, #fe6b6b);
+  padding: 2rem;
   justify-content: center;
   align-items: center; }
+  .products .product__picture {
+    height: 10rem; }
+  .products .title {
+    color: white;
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    margin: 1em; }
+  .products .subtitle {
+    color: white;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+    margin: 1em; }
+  .products li {
+    font-size: 2em;
+    font-weight: 300;
+    text-align: left;
+    color: white; }
 
 .grid-products {
   display: grid;
@@ -717,6 +675,35 @@ nav {
     align-items: center;
     padding: 1rem;
     border-radius: 1rem; }
+
+/* qué aprenderas */
+.que-aprenderas {
+  justify-content: center;
+  align-items: center; }
+
+.que-aprenderas__cards {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+.que-aprenderas__cards--feature {
+  margin: 1rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+  padding: 4rem;
+  max-width: 50rem;
+  border-top: 3px solid #cc0303; }
+  .que-aprenderas__cards--feature p {
+    font-size: 2em;
+    font-weight: 300;
+    text-align: left;
+    color: #222; }
+
+.que-aprenderas__cards--img {
+  width: 3rem;
+  padding: 1rem 0; }
 
 /* speakers */
 .speaker {

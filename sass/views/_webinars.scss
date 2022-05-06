@@ -32,6 +32,44 @@
 
 }
 
+/* qué aprenderas */
+
+.que-aprenderas {
+    justify-content: center;
+    align-items: center;
+}
+
+.que-aprenderas__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.que-aprenderas__cards--feature {
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+    padding: 4rem;
+    max-width: 50rem;
+    border-top: 3px solid $primary;
+
+    p {
+        font-size: 2em;
+        font-weight: 300;
+        text-align: left;
+        color: $secondary;
+    }
+
+}
+
+.que-aprenderas__cards--img {
+    width: 3rem;
+    padding: 1rem 0;
+}
+
+
 /* speakers */
 
 .speaker {

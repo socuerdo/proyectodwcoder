@@ -8,19 +8,10 @@ header {
     padding: 3rem;
 
     h1 {
-        color: $primary;
+        color: $gray;
         font-size: 4em;
         font-weight: 500;
-        text-align: left;
-        margin-bottom: 1em;
-    }
-
-    h2 {
-        color: $secondary;
-        font-size: 3em;
-        font-weight: 300;
-        text-align: left;
-        margin-bottom: 1em;
+        text-align: center;
     }
 
     .subtitle {
@@ -28,6 +19,21 @@ header {
         font-size: 2em;
         font-weight: 400;
         text-align: center;
-        margin-bottom: 1em;
+        width: 60vw;
+    }
+
+    .header__img {
+        width: 60vw;
+        margin: 2rem 0;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    header {
+        .header__img {
+            width: 80vw;
+        }    
     }
 }
