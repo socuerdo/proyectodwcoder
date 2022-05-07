@@ -87,6 +87,7 @@
 
     .product__picture {
         height: 10rem;
+        margin: 3rem 0;
     }
 
     .title {
@@ -96,7 +97,7 @@
         text-align: center;
         margin: 1em;
     }
-    
+
     .subtitle {
         color: white;
         font-size: 2em;
@@ -104,14 +105,6 @@
         text-align: center;
         margin: 1em;
     }
-
-    li {
-        font-size: 2em;
-        font-weight: 300;
-        text-align: left;
-        color: white;
-    }
-    
 }
 
 .grid-products {
@@ -121,6 +114,114 @@
     grid-template-areas:
         "channelManager motordeReservas pms"
         "paginaWeb crmHotelero pxsolAds";
+    row-gap: 2rem;
+    column-gap: 2rem;
+
+    .product__card {
+        flex-wrap: wrap;
+        padding: 2rem;
+        max-width: 58rem;
+        transition: transform 1s ease-in;
+        margin: 1rem;
+        border: 1px solid white;
+        border-radius: 1rem;
+
+        p {
+            box-sizing: border-box;
+            color: white;
+            font-size: 2em;
+            font-weight: 600;
+            text-align: left;
+            text-transform: uppercase;
+            margin: 2rem 0;
+            border-left: white solid 1px;
+            padding-left: 1rem;
+        }
+
+        li {
+            font-size: 2em;
+            font-weight: 400;
+            text-align: left;
+            color: white;
+            margin: 1rem 0;
+            list-style-type: decimal-leading-zero;
+        }
+
+        span {
+            font-size: 1.5em;
+            font-weight: 300;
+            text-align: left;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        ol {
+            padding-left: 3.1rem;
+            margin: 4rem 0;
+        }
+
+    }
 }
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+    .grid-products {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "channelManager"
+            "motordeReservas"
+            "pms"
+            "paginaWeb"
+            "crmHotelero"
+            "pxsolAds";
+        row-gap: 2rem;
+        column-gap: 2rem;
+    
+        .product__card {
+            flex-wrap: wrap;
+            padding: 2rem;
+            max-width: 58rem;
+            transition: transform 1s ease-in;
+            margin: 1rem;
+            border: 1px solid white;
+            border-radius: 1rem;
+    
+            p {
+                box-sizing: border-box;
+                color: white;
+                font-size: 2em;
+                font-weight: 600;
+                text-align: left;
+                text-transform: uppercase;
+                margin: 2rem 0;
+                border-left: white solid 1px;
+                padding-left: 1rem;
+            }
+    
+            li {
+                font-size: 2em;
+                font-weight: 400;
+                text-align: left;
+                color: white;
+                margin: 1rem 0;
+                list-style-type: decimal-leading-zero;
+            }
+    
+            span {
+                font-size: 1.5em;
+                font-weight: 300;
+                text-align: left;
+                color: white;
+                text-transform: uppercase;
+            }
+    
+            ol {
+                padding-left: 3.1rem;
+                margin: 4rem 0;
+            }
+    
+        }
+    }
+    
+}

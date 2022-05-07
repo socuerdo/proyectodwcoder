@@ -1,0 +1,52 @@
+/* referrals */
+
+.referrals {
+    margin: 1rem;
+    border-radius: 1rem;
+    align-items: center;
+    background-image: linear-gradient(to right, #f02222, #fe6b6b);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    justify-content: space-around;
+    align-items: center;
+
+    h3 {
+        text-align: left;
+        line-height: 120%;
+        font-size: 3em;
+        color: $gray;
+        text-align: left;
+        padding: 2rem;
+        font-weight: 400;
+    }
+        
+    .grid-referrals {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        justify-content: space-around;
+        align-items: center;    
+        grid-area:
+        "picture__referrals title__referrals button__referrals ";
+        margin: 1rem;
+        padding: 5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .grid-referrals {
+        display: grid;
+        grid-template-rows: 1fr 1fr .25fr;
+    }
+
+    .picture__referrals {
+        grid-row: 1 / 2;
+    }
+   
+    .title__referrals {
+        grid-row: 2 / 3;
+    }
+   
+    .button__referrals {
+        grid-row: 3 / 4;
+    }
+            
+}

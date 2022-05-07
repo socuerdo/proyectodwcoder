@@ -13,7 +13,7 @@
 
 html {
     font-size: 62.5%;
-    
+    font-family: Work Sans;
 }
 
 p {
@@ -21,7 +21,9 @@ p {
     /* 16px */
 }
 
-ul {
+ul,
+li,
+ol {
     list-style-type: none;
     padding-left: 0;
 }
@@ -78,24 +80,31 @@ button {
     color: white;
     font-family: $font-primary;
     font-size: 1.5em;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     background-color: $primary;
     border: none;
-    padding: px;
+    padding: 4px;
     font-weight: 400;
-    width: fit-content;
+    width: auto;
     height: 4rem;
+    padding: 0 4rem;
     margin: 4px;
     text-align: center;
     align-items: center;
     justify-content: center;
+
+    &:hover {
+        color: white;
+        background-color: $terciary;
+    }
+
 }
 
 .button-secondary {
     color: white;
     font-family: $font-primary;
     font-size: 0.7em;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     background-color: $primary;
     border: none;
     padding: 4px;
@@ -108,7 +117,7 @@ button {
     color: $primary;
     font-family: $font-primary;
     font-size: 1.5em;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     border: none;
     padding: 4px;
     font-weight: 600;
@@ -118,17 +127,24 @@ button {
 
 
 .button-outline {
-    color: $primary;
+    color: white;
     font-family: $font-primary;
-    font-size: 1em;
-    border-radius: 0.5rem;
-    border: 1px solid $primary;
+    font-size: 1.5em;
+    border-radius: 2rem;
+    border: 1px solid white;
     padding: 4px;
-    font-weight: 600;
-    height: 3rem;
-    margin: 4px;
-    width: 16rem;
+    font-weight: 400;
+    height: auto;
+    width: 100%;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        color: $primary;
+        background-color: white;
+    }
+    
 }
 
 
