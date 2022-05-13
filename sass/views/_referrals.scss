@@ -3,3 +3,144 @@
 .header__img--referrals {
     margin: 3rem 0;
 }
+
+/* beneficios y condiciones */
+
+.benefit {
+    @include flex ($direction: row, $justify: space-between, $align: center, );
+}
+
+.cardBenefit {
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    height: 25rem;
+    width: 36vw;
+
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    p {
+        font-size: 2em;
+        font-weight: 300;
+        text-align: left;
+        color: $secondary;
+    }
+
+    .cardBenefit__header--forYou {
+        background-color: $primary;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem;
+    }
+
+    .cardBenefit__header--forAnother {
+        background-color: $secondary;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem;
+    }
+
+    .cardBenefit__header--icon {
+        padding: 1rem;
+
+        img {
+            size: 48px;
+        }
+
+        
+    }
+}
+
+@media (max-width: 576px) {
+    .benefit {
+        @include flex ($direction: column, $align: center, );
+    }
+
+    .cardBenefit {
+        border-radius: 1rem;
+        background-color: white;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        width: auto;
+        height: auto;
+        margin: 1rem 0;
+    }
+
+    .cardBenefit__header--forAnother {
+        margin-top: 0;
+    }
+
+    .cardBenefit__header--forYou {
+        padding: 0;
+    }
+
+    .cardBenefit__header--forAnother {
+        padding: 0;
+    }
+
+    .cardBenefit__header--icon {
+        padding: 1rem;
+
+        img {
+            size: 48px;
+        }
+
+        
+    }
+
+}
+
+
+/* cómo participar */
+
+.comoParticipar {
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: $gray;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 3rem;
+    @include flex ($direction: row, $justify: center, $align: center, );
+
+}
+
+.container-preguntas a {
+    text-decoration: none;
+}
+
+.container-preguntas li {
+    color: $primary;
+    font-weight: 800;
+    list-style-type: decimal-leading-zero;
+    font-size: 1.5rem;
+}
+
+.container-preguntas li a {
+    color: $primary;
+
+}
+
+.container-preguntas li p {
+    color: $secondary;
+    font-weight: 400;
+}
+
+.container-preguntas li b {
+    color: #cc0303;
+}
+
+.porqueIncorporarlo {
+    padding: 1rem;
+}
+
+/* preguntas frecuentes */
+
+.accordion__item h2 {
+    font-size: 1em;
+    font-weight: 600;
+    text-align: left;
+    color: $secondary;
+
+}
+
+
