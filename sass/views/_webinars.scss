@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-    "sectionLeft-image sectionCenter-title sectionRight-contact";
+        "sectionLeft-image sectionCenter-title sectionRight-contact";
 
     .sectionLeft-image {
         grid-area: sectionLeft-image;
@@ -37,103 +37,103 @@
 .que-aprenderas {
     justify-content: center;
     align-items: center;
-}
 
-.que-aprenderas__cards {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
+    &__cards {
+        @include flex ($direction: row, $justify: center, $align: center, $wrap: wrap); 
+    }
 
-.que-aprenderas__cards--feature {
-    margin: 1rem;
-    border-radius: 1rem;
-    background-color: white;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    flex-wrap: wrap;
-    padding: 4rem;
-    max-width: 50rem;
-    border-top: 3px solid $primary;
+    &__cards--feature {
+        margin: 1rem;
+        border-radius: 1rem;
+        background-color: white;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        padding: 4rem;
+        max-width: 50rem;
+        border-top: 3px solid $primary;
 
-    p {
-        font-size: 2em;
-        font-weight: 300;
-        text-align: left;
-        color: $secondary;
+        p {
+            font-size: 2em;
+            font-weight: 300;
+            text-align: left;
+            color: $secondary;
+        }
+
+    }
+
+    &__cards--img {
+        width: 3rem;
+        padding: 1rem 0;
     }
 
 }
 
-.que-aprenderas__cards--img {
-    width: 3rem;
-    padding: 1rem 0;
-}
 
 
 /* speakers */
 
 .speaker {
-    justify-content: center;
-    align-content: center;
+    @include flex ($direction: column, $justify: center, $align: center,); 
+
+
+    &__cards {
+        @include flex ($direction: column, $justify: center, $align: center, $wrap: wrap); 
+        margin: 1rem;
+        border-radius: 1rem;
+        background-color: white;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        padding: 4rem;
+        width: 40rem;
+    }
+
+    &__img {
+        justify-content: center;
+        align-content: center;
+    }
+
+    &__cards--name {
+        font-size: 2em;
+        font-weight: 400;
+        text-align: center;
+        color: $secondary;
+
+    }
+
+    &__cards--position {
+        font-size: 1.5em;
+        font-weight: 200;
+        text-align: center;
+        color: $primary;
+
+    }
+
+    &__cards--business {
+        font-size: 1.5em;
+        font-weight: 200;
+        text-align: center;
+        color: $secondary;
+
+    }
+
 }
 
-.speaker__cards {
-    margin: 1rem;
-    border-radius: 1rem;
-    background-color: white;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    padding: 4rem;
-    width: 50rem;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-}
-
-.speaker__img {
-    justify-content: center;
-    align-content: center;
-}
-
-.speaker__cards--name {
-    font-size: 2em;
-    font-weight: 400;
-    text-align: center;
-    color: $secondary;
-
-}
-
-.speaker__cards--position {
-    font-size: 1.5em;
-    font-weight: 200;
-    text-align: center;
-    color: $primary;
-
-}
-
-.speaker__cards--business {
-    font-size: 1.5em;
-    font-weight: 200;
-    text-align: center;
-    color: $secondary;
-
-}
 
 @media (max-width: 576px) {
     .speaker {
         justify-content: center;
         align-content: center;
+
+        &__cards {
+            border-radius: 1rem;
+            background-color: white;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            margin: 1rem;
+            min-width: 93vw;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
     }
 
-    .speaker__cards {
-        border-radius: 1rem;
-        background-color: white;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-        margin: 1rem;
-        min-width: 93vw;
-        display: grid;
-        align-items: center;
-        justify-items: center;
-    }
 
 }
 

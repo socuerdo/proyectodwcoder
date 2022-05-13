@@ -108,7 +108,7 @@
         <div>
             <h2 class="title">Qué aprenderás en este webinar</h2>
         </div>
-        <div class="que-aprenderas__cards container flex-row">
+        <div class="que-aprenderas__cards container">
             <div class="que-aprenderas__cards--feature">
                 <picture>
                     <img class="que-aprenderas__cards--img" src="../img/settings_suggest.png" alt="settings suggest">
@@ -141,12 +141,12 @@
     <!-- fin que aprenderas -->
 
     <!-- moderadora -->
-    <section class="speaker flex-row">
-        <div class="speaker__cards flex-column">
+    <section class="speaker container">
+        <div class="speaker__cards">
             <div>
                 <h2 class="title">Moderadora</h2>
             </div>
-            <picture class="speaker__img flex-row">
+            <picture class="speaker__img">
                 <img src="../img/laura-cordoba.png" alt="imagen de perfil laura cordoba">
             </picture>
             <h3 class="speaker__cards--name">Laura Córdoba</h3>
@@ -159,29 +159,29 @@
     </section>
     <!-- fin moderadora -->
 
-        <!-- social proof -->
-        <section class="container">
-            <h3 class="title">Más de 500 hoteleros sumando huéspedes felices</h3>
-            <div class="socialProof__grid">
-                <picture class="social-proof__picture">
-                    <img src="../../assets/img/imag-ilustrativa-hotel-diplomatic.jpg" alt="imagen ilustrativa hotel">
-                </picture>
-                <div class="social-proof__card card">
-                    <div class="social-proof__comment">
-                        <p>“La calidad de nuestra web y las funcionalidades de nuestro motor de
-                            reservas nos permitieron aumentar las ventas directas a un nivel excelente.”</p>
-                    </div>
-                    <div class="social-proof__user">
-                        <p>Santiago Alsina</p>
-                    </div>
-                    <picture>
-                        <img class="social-proof__logotipo" src="../../assets/img/diplomatic-social-proof.webp"
-                            alt="logotipo hotel diplomatic">
-                    </picture>
+    <!-- social proof -->
+    <section class="container">
+        <h3 class="title">Más de 500 hoteleros sumando huéspedes felices</h3>
+        <div class="socialProof__grid">
+            <picture class="social-proof__picture">
+                <img src="../img/imag-ilustrativa-hotel-diplomatic.jpg" alt="imagen ilustrativa hotel">
+            </picture>
+            <div class="social-proof__card cards">
+                <div class="social-proof__comment">
+                    <p>“La calidad de nuestra web y las funcionalidades de nuestro motor de
+                        reservas nos permitieron aumentar las ventas directas a un nivel excelente.”</p>
                 </div>
+                <div class="social-proof__user">
+                    <p>Santiago Alsina</p>
+                </div>
+                <picture>
+                    <img class="social-proof__logotipo" src="../img/diplomatic-social-proof.webp"
+                        alt="logotipo hotel diplomatic">
+                </picture>
             </div>
-        </section>
-        <!-- fin social proof -->
+        </div>
+    </section>
+    <!-- fin social proof -->
     
 
     <!-- partners -->
@@ -224,24 +224,51 @@
     <!-- recursos -->
     <section class="container">
         <h3 class="title">También podría interesarte</h3>
-        <div class="grid-resources">
-            <div class="card-1 card-resources-left">
-                <img class="card-resources__image" src="../../assets/img/blog.webp" alt="imagen ilustrativa">
-                <p class="card-resources__subtitle">Titulo</p>
-                <p class="card-resources__description">Descripcion</p>
-                <a class="card-resources__button button-terciary">Ver más +</a>
-            </div>
-            <div class="card-1 card-resources-left">
-                <img class="card-resources__image" src="../../assets/img/blog.webp" alt="imagen ilustrativa">
-                <p class="card-resources__subtitle">Titulo</p>
-                <p class="card-resources__description">Descripcion</p>
-                <a class="card-resources__button button-terciary">Ver más +</a>
-            </div>
-            <div class="card-3 card-resources-right">
-                <img class="card-resources__image" src="../../assets/img/blog.webp" alt="imagen ilustrativa">
-                <p class="card-resources__subtitle">Titulo</p>
-                <p class="card-resources__description">Descripcion</p>
-                <a class="card-resources__button button-terciary">Ver más +</a>
+        <div class="container card-deck">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card cardResources">
+                        <img class="card-img-top" src="../../assets/img/blog.webp" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">BLOG</h5>
+                            <p class="card-text">¿Cómo crear un mail para ganar más reservas?</p>
+                            <a class="cardResources__button button-terciary">Ver más +</a>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Enero 2020</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card cardResources">
+                        <img class="card-img-top" src="../../assets/img/blog.webp" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">EBOOK</h5>
+                            <p class="card-text">8 Pasos para llevar la ocupación de tu hotel al máximo</p>
+                            <a class="cardResources__button button-terciary">Ver más +</a>
+
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Febrero 2020</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card cardResources">
+                        <img class="card-img-top" src="../../assets/img/blog.webp" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">WEBINAR</h5>
+
+                            <p class="card-text">¿Cuáles son los canales de venta (OTAs) que no pueden faltar en
+                                tu hotel?</p>
+                            <a class="cardResources__button button-terciary">Ver más +</a>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Marzo 2020</small>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
